@@ -1,1 +1,17 @@
 <h1>Hello again </h1>
+
+<h2>{{ title }}</h2>
+
+<h3>{{user}}</h3>
+
+
+<h3>{{ request.user }}</h3>
+
+<h4>{{abc}}</h4>
+
+<form method='POST' action=' {% url "accueil" %}'>  {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="Submit"/>
+</form>
